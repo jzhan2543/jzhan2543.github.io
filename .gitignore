@@ -104,3 +104,8 @@ dist
 .tern-port
 assets/.DS_Store
 assets/css/.DS_Store
+.DS_Store
+public/.DS_Store
+public/css/.DS_Store
+public/css/fonts/.DS_Store
+public/images/.DS_Store
