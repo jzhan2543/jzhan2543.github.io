@@ -1,25 +1,12 @@
 ---
-import "../styles/global.css";
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jefferson Zhan — AI Engineer based in NYC</title>
-    <link
-      rel="preload"
-      href="/fonts/InterVariable.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-  </head>
-  <body>
-    <main class="mx-auto max-w-5xl px-8 py-32">
-      <p class="text-meta uppercase text-muted">scaffold ok · phase 1</p>
-      <p class="text-body mt-4">tokens loaded. inter loaded. ready for phase 2.</p>
-    </main>
-  </body>
-</html>
+<Base>
+  <Header />
+  <main>
+    <p class="text-meta text-muted mt-32">scaffold ok · phase 2</p>
+    <p class="text-body mt-4">base layout and header ready. hero next.</p>
+  </main>
+</Base>

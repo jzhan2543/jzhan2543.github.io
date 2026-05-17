@@ -45,7 +45,6 @@
 
 @layer base {
   html {
-    background: var(--color-page);
     color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -54,5 +53,6 @@
 
   body {
     background: var(--color-bg);
+    min-height: 100vh;
   }
 }
