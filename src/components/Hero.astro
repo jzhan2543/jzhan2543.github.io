@@ -1,0 +1,22 @@
+---
+interface Props {
+  word: string;
+  tagline: string;
+  meta: string;
+  intro: string;
+}
+
+const { word, tagline, meta, intro } = Astro.props;
+---
+
+<section class="pt-12 pb-24 sm:pt-20 sm:pb-40">
+  <h1 class="text-display w-fit border-b border-rule pb-2">
+    {word}.
+  </h1>
+  <p class="text-body mt-6">{tagline}</p>
+  <p class="text-meta text-muted uppercase mt-2">{meta}</p>
+
+  <div class="mt-24 sm:mt-32 sm:flex sm:justify-end">
+    <p class="text-body sm:max-w-[60%]">{intro}</p>
+  </div>
+</section>
