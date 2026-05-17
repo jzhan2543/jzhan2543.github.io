@@ -9,12 +9,14 @@ import { work } from "../data/work";
 
 <Base>
   <Header />
-  <Hero
-    word="reason"
-    tagline="AI Engineer based in NYC"
-    meta="EST. 2021 · NEW YORK"
-    intro="I'm an AI engineer at American Express. I build production ML systems — entity matching, document understanding, agent workflows. Before that: CS at Georgia Tech, MS in Data Science at Illinois."
-  />
-  <Work items={work} />
-  <Contact />
+  <main id="main">
+    <Hero
+      word="reason"
+      tagline="AI Engineer based in NYC"
+      meta="EST. 2021 · NEW YORK"
+      intro="I'm an AI engineer at American Express. I build production ML systems — entity matching, document understanding, agent workflows. Before that: CS at Georgia Tech, MS in Data Science at Illinois."
+    />
+    <Work items={work} />
+    <Contact />
+  </main>
 </Base>

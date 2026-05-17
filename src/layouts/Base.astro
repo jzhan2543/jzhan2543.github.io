@@ -20,6 +20,7 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="preload"
       href="/fonts/InterVariable.woff2"
@@ -29,6 +30,12 @@ const {
     />
   </head>
   <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10 focus:bg-bg focus:px-3 focus:py-2 focus:text-ink focus:underline"
+    >
+      Skip to content
+    </a>
     <div class="mx-auto max-w-5xl px-6 sm:px-10">
       <slot />
     </div>
