@@ -111,4 +111,6 @@ public/css/fonts/.DS_Store
 public/images/.DS_Store
 
 CLAUDE.md
-
+design/
+.astro/
+.claude/
