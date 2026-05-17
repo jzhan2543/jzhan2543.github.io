@@ -51,6 +51,12 @@
     text-rendering: optimizeLegibility;
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
   body {
     background: var(--color-bg);
     min-height: 100vh;

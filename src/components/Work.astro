@@ -9,8 +9,8 @@ const { items } = Astro.props;
 ---
 
 <section id="work" class="pt-12 pb-24 sm:pt-20 sm:pb-40">
-  <header class="border-b border-rule pb-3 mb-10">
-    <h2 class="text-body lowercase">work</h2>
+  <header class="border-b border-rule pb-3 mb-12">
+    <h2 class="text-h2 lowercase">work</h2>
   </header>
 
   <ul>
@@ -25,7 +25,7 @@ const { items } = Astro.props;
           {item.href ? (
             <a
               href={item.href}
-              class="text-meta text-accent uppercase no-underline whitespace-nowrap"
+              class="text-meta text-accent uppercase no-underline whitespace-nowrap underline-offset-4 hover:underline focus-visible:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
