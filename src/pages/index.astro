@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Work from "../components/Work.astro";
+import Contact from "../components/Contact.astro";
 import { work } from "../data/work";
 ---
 
@@ -15,4 +16,5 @@ import { work } from "../data/work";
     intro="I'm an AI engineer at American Express. I build production ML systems — entity matching, document understanding, agent workflows. Before that: CS at Georgia Tech, MS in Data Science at Illinois."
   />
   <Work items={work} />
+  <Contact />
 </Base>

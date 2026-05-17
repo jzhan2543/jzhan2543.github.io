@@ -1,0 +1,53 @@
+---
+const items = [
+  {
+    label: "E",
+    text: "jeffzhan2008@gmail.com",
+    href: "mailto:jeffzhan2008@gmail.com",
+  },
+  {
+    label: "L",
+    text: "in/jeffersonzhan23",
+    href: "https://www.linkedin.com/in/jeffersonzhan23/",
+  },
+  {
+    label: "G",
+    text: "github.com/jzhan2543",
+    href: "https://github.com/jzhan2543",
+  },
+];
+---
+
+<section id="contact" class="pt-12 pb-20 sm:pt-20 sm:pb-32">
+  <header class="border-b border-rule pb-3 mb-10">
+    <h2 class="text-body lowercase">contact</h2>
+  </header>
+
+  <dl class="space-y-4">
+    {
+      items.map((item) => {
+        const isExternal = item.href.startsWith("http");
+        return (
+          <div class="grid grid-cols-[40px_1fr] items-baseline gap-x-4">
+            <dt class="text-meta text-muted uppercase">{item.label}</dt>
+            <dd class="text-body">
+              <a
+                href={item.href}
+                class="text-accent no-underline"
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+              >
+                {item.text}
+              </a>
+            </dd>
+          </div>
+        );
+      })
+    }
+  </dl>
+
+  <footer class="mt-20 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 text-meta text-muted uppercase sm:mt-32">
+    <span>New York</span>
+    <small>©2026 Jefferson Zhan</small>
+  </footer>
+</section>
