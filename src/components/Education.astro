@@ -1,0 +1,29 @@
+---
+import type { EducationItem } from "../data/education";
+
+interface Props {
+  items: EducationItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section id="education" class="py-12 sm:py-16">
+  <header class="border-b border-rule pb-6">
+    <h2 class="text-h2 lowercase">education</h2>
+  </header>
+
+  <ul>
+    {
+      items.map((item) => (
+        <li class="grid grid-cols-1 gap-y-2 border-t border-rule py-6 first:border-t-0 sm:grid-cols-[100px_1fr] sm:gap-x-10 sm:gap-y-0">
+          <time class="text-meta text-muted uppercase">{item.date}</time>
+          <div>
+            <h3 class="text-body">{item.school}</h3>
+            <p class="text-body text-muted mt-1">{item.degree}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>
